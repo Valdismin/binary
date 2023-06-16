@@ -1,9 +1,17 @@
+@keyframes moveLine {
+    0% {
+        left:10px;
+    }
+    100% {
+        left:320px;
+    }
+}
+
 body {
     height: calc(100vh - 64px);
 }
 .graph-page {
     padding: 20px 0 44px 0;
-
     background: url('assets/images/graph-page.png') #161616 no-repeat;
     background-size: cover;
 }
@@ -34,7 +42,7 @@ body {
     letter-spacing: 0.01em;
     color: #FFFFFF;
     margin-bottom: 10px;
-    margin-top: 240px;
+    margin-top: 70px;
 }
 
 .graph-page .main-text {
@@ -42,9 +50,10 @@ body {
 }
 
 .graph-page .income {
-    font-family: 'Dela Gothic One';
+    font-family: 'Dela Gothic One',sans-serif;
     font-style: normal;
     font-weight: 400;
+    letter-spacing: 8px;
     font-size: 30px;
     line-height: 43px;
     padding-left: 28px;
@@ -54,6 +63,59 @@ body {
 
 .graph-page .header {
     margin-bottom: 100px;
+}
+
+.animation-parts {
+    animation: moveLine 5s 1;
+    animation-fill-mode: forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom:0;
+    left: 10px;
+}
+
+.graph-page .square {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.price {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 155%;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    background: #10AB53;
+    box-shadow: 0px 4px 8px rgba(56, 239, 125, 0.1);
+    border-radius: 40px;
+    padding: 4px 8px;
+}
+
+.line-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin-top: 12px;
+    width: 16px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.072) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.dot {
+    font-size: 30px;
+    color: #FFFFFF;
+    position: absolute;
+    top:72px;
+}
+
+.line {
+    height: 240px;
+    border-left: 1px dashed #FFFFFF;
 }
 
 .items-wrapper {
@@ -75,6 +137,7 @@ body {
     height: 300px;
     background: url("assets/images/graph.png")  no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 .month-list {

@@ -13,6 +13,11 @@
 
 <div class="root">
     <div class="graph-page">
+        <script>
+            setTimeout(() => {
+                window.pageNumber = 11
+            }, 5000)
+        </script>
         <div class="header">
             <img src="assets/images/white-logo.svg"/>
             <div>
@@ -28,9 +33,25 @@
                 Monthly
             </div>
         </div>
-        <div class="income">$8 742</div>
+        <div class="income">$6725</div>
 
-        <div class="graph"></div>
+        <div class="graph">
+
+            <div class="animation-parts">
+                <div class="price">+ $ 18,00</div>
+                <div class="square">
+                    <img class="square-img" width="20px" height="20px" src="assets/images/tesla.png">
+                </div>
+                <div class="line-wrapper">
+                    <div class="dot">
+                        &#8226;
+                    </div>
+                    <div class="line"></div>
+                </div>
+            </div>
+
+
+        </div>
         <ul class="month-list">
             <li>Jan</li>
             <li>Feb</li>
