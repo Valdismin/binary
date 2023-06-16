@@ -1,7 +1,7 @@
 .question-page {
     padding: 20px 0 44px 0;
     height: calc(100vh - 64px);
-    background: url("assets/questions-background.png");
+    background: url("assets/images/questions-background.png");
     background-repeat: no-repeat;
     background-position: bottom;
 }
@@ -16,6 +16,7 @@
 
 .question-page .title {
     color: #161616;
+    text-transform: none;
 }
 
 .content-wrapper {
@@ -29,7 +30,7 @@
     align-items: flex-start;
     flex-direction: column;
     padding: 0 28px;
-    font-family: 'Inter';
+    font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -134,7 +135,7 @@
 
 .period {
     margin-right: 30px;
-    font-family: 'Inter';
+    font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -144,7 +145,7 @@
 
 .period-dropdown {
     width: 122px;
-    font-family: 'Inter';
+    font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
