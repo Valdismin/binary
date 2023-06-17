@@ -1,8 +1,12 @@
 .question-page {
     padding: 20px 0 44px 0;
-    height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     background: url("assets/images/questions-background.png");
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: bottom;
 }
 
@@ -17,12 +21,6 @@
 .question-page .title {
     color: #161616;
     text-transform: none;
-}
-
-.content-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .answers-wrapper {
@@ -46,6 +44,7 @@
     padding: 16px 0 16px 20px;
     background: #F3F3F3;
     border-radius: 79px;
+    height: 62px;
     margin-bottom: 10px;
     box-sizing: border-box;
 }
@@ -54,7 +53,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 330px;
 }
 
 .question-page-1 .next-button {

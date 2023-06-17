@@ -19,16 +19,18 @@ Array.from(elements).forEach((element) => {
 
 const buttonElements = document.getElementsByClassName("next-button")
 const pageLayouts = document.getElementsByClassName("page")
+const lastPage = document.getElementById("11")
 
 Array.from(buttonElements).forEach((buttonElement) => {
     buttonElement.addEventListener("click", () => {
         window.pageNumber++
         Array.from(pageLayouts).map(page => {
-            if (window.pageNumber == page.id) {
-                page.style.display = 'block'
-                if (window.pageNumber == 10) {
+            if (window.pageNumber === Number(page.id)) {
+                page.style.display = 'flex'
+                if (window.pageNumber === 10) {
                     setTimeout(() => {
-                        window.pageNumber = 11
+                        page.style.display = 'none'
+                        lastPage.style.display = "flex"
                     }, 5000)
                 }
             } else {

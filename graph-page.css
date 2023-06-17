@@ -7,13 +7,14 @@
     }
 }
 
-body {
-    height: calc(100vh - 64px);
-}
 .graph-page {
     padding: 20px 0 44px 0;
     background: url('assets/images/graph-page.png') #161616 no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
 }
 
 .graph-page .title {
