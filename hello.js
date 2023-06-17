@@ -1,6 +1,6 @@
-const elements = document.getElementsByClassName("radio-input")
-
 window.pageNumber = 1
+
+const elements = document.getElementsByClassName("radio-input")
 
 Array.from(elements).forEach((element) => {
     element.addEventListener("change", () => {
@@ -16,6 +16,7 @@ Array.from(elements).forEach((element) => {
         selectedElement.style.cssText += 'border:1px solid #5142E2;background-color:#E8E6FF'
     })
 })
+
 
 const buttonElements = document.getElementsByClassName("next-button")
 const pageLayouts = document.getElementsByClassName("page")
@@ -39,5 +40,30 @@ Array.from(buttonElements).forEach((buttonElement) => {
         })
     })
 })
+
+
+const dropdowns = document.getElementsByClassName("period-dropdown-wrapper")
+
+
+Array.from(dropdowns).forEach((dropdownButton) => {
+    dropdownButton.addEventListener("click", () => {
+        const selectedElement = dropdownButton.lastElementChild
+        if(selectedElement.style.display === 'block') {
+            selectedElement.style.display = 'none'
+            return
+        }
+        selectedElement.style.display = 'block'
+    })
+})
+
+const dropdownsElements = document.getElementsByClassName("period-dropdown-wrapper")
+
+$(window).click(function() {
+    Array.from(dropdownsElements).forEach(() => {
+
+    })
+});
+
+
 
 

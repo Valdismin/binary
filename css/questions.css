@@ -142,6 +142,7 @@
 }
 
 .period-dropdown {
+    display: none;
     width: 122px;
     font-family: Inter, sans-serif;
     font-style: normal;
@@ -152,5 +153,10 @@
     position: absolute;
     right:50px;
     background: #FFFFFF;
-    padding: 4px 0 4px 10px;
+    border-radius: 4px;
+    padding: 4px 12px 4px 10px;
+}
+
+.period-dropdown div:first-of-type {
+    border-bottom: 1px solid #F3F3F3;
 }
