@@ -3,14 +3,14 @@ window.assetImage = "tesla"
 const time = 3800;
 const step = 16;
 
-const elements = document.getElementsByClassName("radio-input")
-const elementsWrappers = document.getElementsByClassName("radio-input-wrapper")
+const radioElements = document.getElementsByClassName("radio-input")
+const radioElementsWrappers = document.getElementsByClassName("radio-input-wrapper")
 
-Array.from(elementsWrappers).forEach((element) => {
+Array.from(radioElementsWrappers).forEach((element) => {
     const closestButton = element.parentElement.parentElement.nextElementSibling.children[0]
     element.addEventListener("click", () => {
         const radioElement = element.firstElementChild
-        Array.from(elements).map((innerElement) => {
+        Array.from(radioElements).map((innerElement) => {
             if (innerElement.checked && innerElement.id !== radioElement.id) {
                 innerElement.checked = false
                 const selectedElement = innerElement.closest('.radio-input-wrapper')
@@ -91,7 +91,7 @@ Array.from(dropdownOptions).forEach((dropdownOption) => {
 })
 
 
-Array.from(elements).filter((element) => ['google','gold','tesla','nike'].includes(element.id)).forEach((element) => {
+Array.from(radioElements).filter((element) => ['google','gold','tesla','nike'].includes(element.id)).forEach((element) => {
     element.parentElement.addEventListener('click',() => {
         window.assetImage = element.id
         const squareImage = document.getElementById('squareImage')
