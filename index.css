@@ -145,4 +145,9 @@ body {
     color: #FFFFFF;
 }
 
+@media screen and (max-width: 395px) {
+    .row-item {
+        margin-right: 30px;
+    }
+}
 

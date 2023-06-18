@@ -1,3 +1,19 @@
+@media screen and (max-width: 380px) {
+    .animation-parts {
+        animation: moveLineSmallDisplay 5s 1!important;
+        animation-fill-mode: forwards!important;
+    }
+}
+
+@keyframes moveLineSmallDisplay {
+    0% {
+        left:10px;
+    }
+    100% {
+        left:290px;
+    }
+}
+
 @keyframes moveLine {
     0% {
         left:10px;
@@ -9,7 +25,7 @@
 
 .graph-page {
     padding: 20px 0 44px 0;
-    background: url('assets/images/graph-page.png') #161616 no-repeat;
+    background: url('../assets/images/graph-page.png') #161616 no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -50,6 +66,24 @@
     margin-top: 130px;
 }
 
+.graph-page .income-wrapper {
+    padding-left: 28px;
+}
+
+.graph-page .profit-wrapper {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 155%;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    background: #10AB53;
+    box-shadow: 0px 4px 8px rgba(56, 239, 125, 0.1);
+    border-radius: 40px;
+    padding: 4px 8px;
+}
+
 .graph-page .income {
     font-family: 'Dela Gothic One',sans-serif;
     font-style: normal;
@@ -57,7 +91,6 @@
     letter-spacing: 8px;
     font-size: 30px;
     line-height: 43px;
-    padding-left: 28px;
     text-align: left;
     color: #FFFFFF;
 }
@@ -83,19 +116,6 @@
     border-radius: 8px;
 }
 
-.price {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 155%;
-    margin-bottom: 10px;
-    color: #FFFFFF;
-    background: #10AB53;
-    box-shadow: 0px 4px 8px rgba(56, 239, 125, 0.1);
-    border-radius: 40px;
-    padding: 4px 8px;
-}
 
 .line-wrapper {
     display: flex;
@@ -136,7 +156,7 @@
     margin-top: 100px;
     width: 100%;
     height: 300px;
-    background: url("assets/images/graph.png")  no-repeat;
+    background: url("../assets/images/graph.png")  no-repeat;
     background-size: cover;
     position: relative;
 }

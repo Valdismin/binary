@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<div class="root">
+<div class="root" id="root">
     <div class="main-page page" id="1">
         <div>
             <div class="header">
@@ -24,9 +24,7 @@
             </div>
             <div class="title">Try yourself as a trader!</div>
             <div class="subtitle">This is an investment game about your future on the stock exchange. Find out if it’s
-                easy
-                for
-                you to make profits from trades!
+                easy for you to make profits from trades!
             </div>
             <div class="square-row">
                 <div class="row-item">
@@ -72,19 +70,19 @@
             <div class="title">How old are you?</div>
             <div class="answers-wrapper">
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="29">
+                    <input class="radio-input" type="radio" id="29"/>
                     <label for="29">from 18 to 29</label>
                 </div>
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="35">
+                    <input class="radio-input" type="radio" id="35"/>
                     <label for="35">30-35</label>
                 </div>
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="44">
+                    <input class="radio-input" type="radio" id="44"/>
                     <label for="44">36-44</label>
                 </div>
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="45">
+                    <input class="radio-input" type="radio" id="45"/>
                     <label for="45">45+</label>
                 </div>
             </div>
@@ -106,19 +104,19 @@
             <div class="title">What is your monthly income?</div>
             <div class="answers-wrapper">
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="150">
+                    <input class="radio-input" type="radio" id="150"/>
                     <label for="150">$50-$150</label>
                 </div>
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="300">
+                    <input class="radio-input" type="radio" id="300"/>
                     <label for="300">$150-$300</label>
                 </div>
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="1000">
+                    <input class="radio-input" type="radio" id="1000"/>
                     <label for="1000">$300-$1000</label>
                 </div>
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="1001">
+                    <input class="radio-input" type="radio" id="1001"/>
                     <label for="1001">$1000+</label>
                 </div>
             </div>
@@ -140,46 +138,58 @@
             <div class="title">How much would you like to earn?</div>
             <div class="answers-wrapper">
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="$300">
+                    <input class="radio-input" type="radio" id="$300"/>
                     <label for="$300">$300</label>
                     <div class="period-dropdown-wrapper">
-                        <div class="period" style="align-self: end">Period ^</div>
+                        <div class="period-wrapper">
+                            <div class="period" id="period" style="align-self: end">Period</div>
+                            <img width="15px" height="10px" src="assets/images/dropdown-arrow-up.svg"/>
+                        </div>
                         <div class="period-dropdown">
-                            <div>per week</div>
-                            <div>per month</div>
+                            <div class="dropdown-option">per week</div>
+                            <div class="dropdown-option">per month</div>
                         </div>
                     </div>
                 </div>
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="$500">
+                    <input class="radio-input" type="radio" id="$500"/>
                     <label for="$500">$500</label>
                     <div class="period-dropdown-wrapper">
-                        <div class="period" style="align-self: end">Period ^</div>
+                        <div class="period-wrapper">
+                            <div class="period" style="align-self: end">Period</div>
+                            <img width="15px" height="10px" src="assets/images/dropdown-arrow-up.svg"/>
+                        </div>
                         <div class="period-dropdown">
-                            <div>per week</div>
-                            <div>per month</div>
+                            <div class="dropdown-option">per week</div>
+                            <div class="dropdown-option">per month</div>
                         </div>
                     </div>
                 </div>
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="$1000">
+                    <input class="radio-input" type="radio" id="$1000"/>
                     <label for="$1000">$1000</label>
                     <div class="period-dropdown-wrapper">
-                        <div class="period" style="align-self: end">Period ^</div>
+                        <div class="period-wrapper">
+                            <div class="period" style="align-self: end">Period</div>
+                            <img width="15px" height="10px" src="assets/images/dropdown-arrow-up.svg"/>
+                        </div>
                         <div class="period-dropdown">
-                            <div>per week</div>
-                            <div>per month</div>
+                            <div class="dropdown-option">per week</div>
+                            <div class="dropdown-option">per month</div>
                         </div>
                     </div>
                 </div>
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="$5000">
+                    <input class="radio-input" type="radio" id="$5000"/>
                     <label for="$5000">$5000+</label>
                     <div class="period-dropdown-wrapper">
-                        <div class="period" style="align-self: end">Period ^</div>
+                        <div class="period-wrapper">
+                            <div class="period" style="align-self: end">Period</div>
+                            <img width="15px" height="10px" src="assets/images/dropdown-arrow-up.svg"/>
+                        </div>
                         <div class="period-dropdown">
-                            <div>per week</div>
-                            <div>per month</div>
+                            <div class="dropdown-option">per week</div>
+                            <div class="dropdown-option">per month</div>
                         </div>
                     </div>
                 </div>
@@ -204,11 +214,11 @@
             <div class="title">Do you have any experience in trading?</div>
             <div class="answers-wrapper">
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="Yes">
+                    <input class="radio-input" type="radio" id="Yes"/>
                     <label for="Yes">Yes</label>
                 </div>
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="No">
+                    <input class="radio-input" type="radio" id="No"/>
                     <label for="No">No</label>
                 </div>
             </div>
@@ -232,11 +242,11 @@
             <div class="title">Which trading strategy would you choose?</div>
             <div class="answers-wrapper">
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="High">
+                    <input class="radio-input" type="radio" id="High"/>
                     <label for="High">High-risk (with returns over 200%)</label>
                 </div>
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="Low">
+                    <input class="radio-input" type="radio" id="Low"/>
                     <label for="Low">Low-risk (with returns of 10%-15%)</label>
                 </div>
             </div>
@@ -258,39 +268,41 @@
             <div class="title">What trading asset would you choose?</div>
             <div class="answers-wrapper">
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="Google" value="Google">
-                    <label for="Google">Google</label>
+                    <input class="radio-input" type="radio" id="google" value="Google"/>
+                    <label for="google">Google</label>
                 </div>
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="Gold" value="Gold">
-                    <label for="Gold">Gold</label>
+                    <input class="radio-input" type="radio" id="gold" value="Gold"/>
+                    <label for="gold">Gold</label>
                 </div>
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="Tesla" value="Tesla">
-                    <label for="Tesla">Tesla</label>
+                    <input class="radio-input" type="radio" id="tesla" value="Tesla"/>
+                    <label for="tesla">Tesla</label>
                 </div>
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="Nike" value="Nike">
-                    <label for="Nike">Nike</label>
+                    <input class="radio-input" type="radio" id="nike" value="Nike"/>
+                    <label for="nike">Nike</label>
                 </div>
             </div>
-            <!--            <div class="square-row">-->
-            <!--                <div class="square">-->
-            <!--                    <img class="square-img" width="58px" height="58px" src="assets/images/tesla.png">-->
-            <!--                </div>-->
-            <!--                <div class="square">-->
-            <!--                    <img class="square-img" width="58px" height="58px" src="assets/images/tesla.png">-->
-            <!--                </div>-->
-            <!--                <div class="square">-->
-            <!--                    <img class="square-img" width="58px" height="58px" src="assets/images/tesla.png">-->
-            <!--                </div>-->
-            <!--                <div class="square">-->
-            <!--                    <img class="square-img" width="58px" height="58px" src="assets/images/tesla.png">-->
-            <!--                </div>-->
-            <!--            </div>-->
+            <div style="position: relative; overflow:hidden">
+                <div class="square-row">
+                    <div class="square">
+                        <img class="square-img" width="43px" height="44px" src="assets/images/google.png">
+                    </div>
+                    <div class="square">
+                        <img class="square-img-gold" width="82px" height="62px" src="assets/images/gold.png">
+                    </div>
+                    <div class="square">
+                        <img class="square-img-nike" width="56px" height="20px" src="assets/images/nike.png">
+                    </div>
+                    <div class="square">
+                        <img class="square-img" width="58px" height="58px" src="assets/images/tesla.png">
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="button-wrapper" style="margin-top: 100px">
+        <div class="button-wrapper">
             <button class="next-button">Next question <img height="24px" src="assets/images/arrow-right.svg"/>
             </button>
         </div>
@@ -308,19 +320,19 @@
             <div class="title">Please choose the expiration time</div>
             <div class="answers-wrapper">
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="30seconds">
+                    <input class="radio-input" type="radio" id="30seconds"/>
                     <label for="30seconds">30 seconds</label>
                 </div>
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="1minute">
+                    <input class="radio-input" type="radio" id="1minute"/>
                     <label for="1minute">1 minute</label>
                 </div>
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="10minutes">
+                    <input class="radio-input" type="radio" id="10minutes"/>
                     <label for="10minutes">10 minutes</label>
                 </div>
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="1hour">
+                    <input class="radio-input" type="radio" id="1hour"/>
                     <label for="1hour">1 hour</label>
                 </div>
             </div>
@@ -344,28 +356,22 @@
             <div class="title">Please make your asset price forecast</div>
             <div class="answers-wrapper">
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="up">
+                    <input class="radio-input" type="radio" id="up"/>
                     <label for="up">The price will go up <img src="assets/images/arrow-up.svg"/></label>
                 </div>
                 <div class="radio-input-wrapper">
-                    <input class="radio-input" type="radio" id="down">
+                    <input class="radio-input" type="radio" id="down"/>
                     <label for="down">The price will go down <img src="assets/images/arrow-down.svg"/></label>
                 </div>
             </div>
         </div>
 
-        <div class="content-wrapper">
-            <div class="button-wrapper">
-                <button class="next-button">Next question <img height="24px" src="assets/images/arrow-right.svg"/>
-                </button>
-            </div>
+        <div class="button-wrapper">
+            <button class="next-button">Next question <img height="24px" src="assets/images/arrow-right.svg"/></button>
         </div>
 
     </div>
     <div class="graph-page page" style="display: none" id="10">
-        <div>
-
-        </div>
         <div class="header">
             <img src="assets/images/white-logo.svg"/>
             <div>
@@ -381,13 +387,20 @@
                 Monthly
             </div>
         </div>
-        <div class="income">$6725</div>
+        <div class="income-wrapper">
+            <span class="income">$</span>
+            <span class="income" id="common-balance">0</span>
+        </div>
+
         <div class="graph">
 
             <div class="animation-parts">
-                <div class="price">+ $ 18,00</div>
+                <div class="profit-wrapper">
+                    <span>+ $ </span>
+                    <span class="price" id="profit">0</span>
+                </div>
                 <div class="square">
-                    <img class="square-img" width="20px" height="20px" src="assets/images/tesla.png">
+                    <img class="square-img" id="squareImage" width="20px" height="20px">
                 </div>
                 <div class="line-wrapper">
                     <div class="dot">
@@ -422,7 +435,7 @@
             <div class="subtitle">You have completed the test.</div>
             <div class="main-part">
                 <div class="main-text">The potential profit could be</div>
-                <div class="income">$8,742</div>
+                <div class="income">$8,752</div>
             </div>
         </div>
         <div>
@@ -432,7 +445,7 @@
             </div>
         </div>
     </div>
-    <script src="hello.js"></script>
+    <script src="index.js"></script>
 </div>
 
 </body>
