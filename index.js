@@ -64,9 +64,11 @@ Array.from(dropdowns).forEach((dropdownButton) => {
         e.stopPropagation()
         if(selectedElement.style.display === 'block') {
             selectedElement.style.display = 'none'
+            dropdownButton.children[0].children[1].style.transform = `none`
             return
         }
         selectedElement.style.display = 'block'
+        dropdownButton.children[0].children[1].style.transform = `rotate(180deg)`
     })
 })
 
@@ -74,6 +76,7 @@ window.addEventListener('click', function(e){
     if (document.getElementById('root').contains(e.target)){
         Array.from(dropdowns).forEach((dropdownButton) => {
             const selectedElement = dropdownButton.lastElementChild
+            dropdownButton.children[0].children[1].style.transform = `none`
             selectedElement.style.display = 'none'
         })
     }
@@ -85,7 +88,7 @@ Array.from(dropdownOptions).forEach((dropdownOption) => {
     dropdownOption.addEventListener("click", () => {
         const text = dropdownOption.innerHTML
         const dropdownParent = dropdownOption.parentElement.previousElementSibling.children[0]
-
+        dropdownParent.nextElementSibling.style.transform = `none`
         dropdownParent.innerHTML = text
     })
 })
@@ -122,6 +125,18 @@ function outNum(num) {
     }, t);
 }
 
+
+Array.from(radioElements).filter((element) => ['up','down'].includes(element.id)).forEach((element) => {
+    element.parentElement.addEventListener('click',() => {
+        const graph = document.getElementsByClassName("graph")
+        if(element.id === "down") {
+            graph[0].style.transform = "scale(1, -1)"
+            graph[0].children[0].style.transform = "scale(1, -1)"
+            graph[0].children[0].style.bottom = "unset"
+            graph[0].children[0].style.top = "0"
+        }
+    })
+})
 
 
 
