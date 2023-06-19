@@ -95,7 +95,7 @@ Array.from(radioElements).filter((element) => ['google','gold','tesla','nike'].i
     element.parentElement.addEventListener('click',() => {
         window.assetImage = element.id
         const squareImage = document.getElementById('squareImage')
-        squareImage.src = `../assets/images/${window.assetImage}.png`
+        squareImage.src = `assets/images/${window.assetImage}.png`
         if(element.id === "nike") {
             squareImage.width = 30
             squareImage.height = 15
