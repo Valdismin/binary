@@ -82,7 +82,7 @@ body {
     font-size: 16px;
     line-height: 155%;
     color: #FFFFFF;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     padding: 0 28px;
 }
 
@@ -143,6 +143,7 @@ body {
     font-size: 18px;
     line-height: 145.69%;
     color: #FFFFFF;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 395px) {
