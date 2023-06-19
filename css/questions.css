@@ -64,7 +64,7 @@
     position: relative;
     justify-content: space-between;
     margin-bottom: 0;
-    margin-top: 30px;
+    margin-top: 10px;
     width: calc(100% + 50px);
     left: -25px;
 }
@@ -191,12 +191,29 @@
         height: 70px;
         border-radius: 20px;
     }
-        .question-page-1 .button-wrapper {
-            margin-top: 0;
-        }
+
+    .question-page-1 .square-img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .question-page-1 .square-img-nike {
+        width: 38px;
+        height: 20px;
+    }
+
+    .question-page-1 .square-img-gold {
+        width: 48px;
+        height: 38px;
+    }
+
+    .question-page-1 .button-wrapper {
+        margin-top: 0;
+    }
+
     .question-page-1 .radio-input-wrapper {
-                height: 42px;
-            }
+        height: 42px;
+    }
 }
 
 
