@@ -1,7 +1,5 @@
 window.pageNumber = 1
 window.assetImage = "tesla"
-const time = 3800;
-const step = 16;
 
 const radioElements = document.getElementsByClassName("radio-input")
 const radioElementsWrappers = document.getElementsByClassName("radio-input-wrapper")
@@ -114,9 +112,9 @@ function outNum(num) {
     let balanceElement = document.querySelector('#common-balance')
     let profitElement = document.querySelector('#profit')
     let n = 0;
-    let t = Math.round(time / (num / step));
+    let t = Math.round(3800 / (num / 16));
     let interval = setInterval(() => {
-        n = n + step;
+        n = n + 16;
         if (n >= num) {
             clearInterval(interval);
         }
